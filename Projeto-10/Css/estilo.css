@@ -1,0 +1,145 @@
+body{
+    background: rgb(228, 221, 208);
+}
+header nav.desktop a:hover{
+    border-left: 2px solid white;
+}
+nav.desktop .btn-nav:hover{
+    border: 2px solid green;
+}
+header .chamada-header input[type=submit]:hover{
+    border-bottom: 4px solid orangered ;
+    border-right: 2px solid orangered;
+    background-color: orange;
+}
+header nav.mobile {
+    float: right;
+    display: none;
+     }
+.menu-topo>.logo h2{
+         position: relative;
+         z-index: 3;
+         color: white;
+     }
+header .mobile ul {
+    list-style-type: none;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgb(27, 63, 27);
+    padding: 20px 0 10px 0;
+    text-align: center;
+    border: 2px solid blue;
+}
+header .mobile li{
+    padding: 20px;
+    
+}
+.mobile .btn-nav{
+    border-radius: 20px;
+    border: 2px solid white;
+    display: inline-block;
+}
+  header .mobile a {
+      padding: 20px 0;
+    text-decoration: none;
+    color: white; }
+  header nav.mobile h2 {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    z-index: 2;
+}
+section.description2{
+    padding: 40px 0 60px 0;
+}
+section.description2 > .container{
+    max-width: 930px;
+    background-image: url('../Img/site2.jpg');
+    width: 100%;
+    min-height: 250px;
+    position: relative;
+}
+section.description2 .box-content{
+    position: absolute;
+    left: 40%;
+    bottom: -30px;
+    background-color: white;
+    height: auto;
+    width: 400px;
+    padding: 20px;
+}
+.logos> .logo-single:last-child{
+    border: 1px solid #ccc;
+}
+section.formulario input[type=submit]:hover{
+    background-color: orangered;
+    border-bottom: 2px solid purple;
+
+}
+.footer span:hover{
+    background-color: orangered;
+    border: 2px solid rgb(189, 56, 56);
+}
+section.servicos .box-servicos-wraper a:hover{
+    color: rebeccapurple;
+    border: 2px solid rebeccapurple;
+}
+
+@media screen and (max-width: 768px) {
+        nav.desktop {
+          display: none;
+         }
+      
+        header nav.mobile {
+          display: block;
+         } 
+         header nav.mobile h2{
+             display: block;
+         }
+         .chamada-header{
+             margin: 0 auto;
+             text-align: center;
+         }
+         section.description1 .descricao-texto{
+             width: 100%;
+             float: none;
+             display: block;
+             margin-bottom: 20px;
+         }
+         section.description1 .img{
+             float: none;
+             width: 100%;
+            
+            max-width: 900px;
+         }
+         section.description2 .box-content{
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%,-50%);
+         }
+         section.servicos .box-servicos{
+             width: 50%;
+         }
+         section.portfolio .logos> .logo-single{
+             width: 100%;
+             max-width: 500px;
+
+         }
+         footer .container .box-footer{
+             width: 100%;
+             margin-bottom: 20px;
+             text-align: center;
+         }
+        
+}
+@media screen and (max-width: 580px){
+    section.servicos .box-servicos{
+        width: 100%;
+    }
+}
